@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical"
+    android:padding="9dp" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- Internal Memory Info Container -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_background"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/internal_memory_info"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ccc"
+                    android:padding="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="9dp"
+                    android:orientation="horizontal" >
+
+                    <!-- Progress Wheel -->
+
+                    <!-- Memory Status Container -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/txtTotalInternalMemory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:textColor="@color/soft_blue"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtAvailInternalMemory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:textColor="#38b3e5"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtFreeInternalMemory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:gravity="left"
+                            android:textColor="@color/soft_blue"
+                            android:singleLine="true"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- External Memory Info Container -->
+
+            <LinearLayout
+                android:id="@+id/layourExternal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/card_background"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/external_memory_info"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ccc"
+                    android:padding="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="9dp"
+                    android:orientation="horizontal" >
+
+                    <!-- Progress Wheel -->
+
+
+                    <!-- Memory Status Container -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/txtTotalExternalMemory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:textColor="@color/soft_blue"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtAvailExternalMemory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:textColor="#38b3e5"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtFreeExternalMemory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:textColor="@color/soft_blue"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView><!-- End ScrollView -->
+
+</LinearLayout>

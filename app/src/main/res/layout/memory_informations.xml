@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:background="@color/colorPrimaryLight"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/internal_memory_info"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="2dp"></LinearLayout>
+
+        <LinearLayout
+            android:background="@color/colorPrimaryLight"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:layout_margin="23dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:id="@+id/waveLoadingView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:wlv_borderColor="#fff"
+                app:wlv_borderWidth="3dp"
+                app:wlv_wave_background_Color="@color/white"
+                app:wlv_progressValue="10"
+                app:wlv_shapeType="circle"
+                app:wlv_round_rectangle="true"
+                app:wlv_triangle_direction="north"
+                app:wlv_titleCenter="Center Title"
+                app:wlv_titleCenterColor="#fff"
+                app:wlv_titleCenterStrokeColor="@color/colorPrimary"
+                app:wlv_titleCenterStrokeWidth="2dp"
+                app:wlv_titleCenterSize="28sp"
+                app:wlv_waveAmplitude="20"
+                app:wlv_waveColor="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="11dp"
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txtTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:text="@string/total_ac"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:id="@+id/txtTotalInternalMemory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:text="@string/zero_gb"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txtAvail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:text="@string/available_ac"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:id="@+id/txtAvailInternalMemory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/zero_with_dot_mb"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txtFree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:text="@string/used_ac"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:id="@+id/txtFreeInternalMemory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/zero_gb"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:singleLine="true"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="1dp"></LinearLayout>
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryLight"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/external_memory_info"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryLight"
+            android:layout_height="2dp"></LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:layout_margin="23dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:id="@+id/waveLoadingView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:wlv_borderColor="@color/colorPrimaryLight"
+                app:wlv_borderWidth="3dp"
+                app:wlv_wave_background_Color="@color/colorPrimaryLight"
+                app:wlv_progressValue="0"
+                app:wlv_shapeType="circle"
+                app:wlv_round_rectangle="true"
+                app:wlv_triangle_direction="north"
+                app:wlv_titleCenter="Not Found"
+                app:wlv_titleCenterColor="@color/colorPrimaryLight"
+                app:wlv_titleCenterStrokeColor="@color/white"
+                app:wlv_titleCenterStrokeWidth="2dp"
+                app:wlv_titleCenterSize="28sp"
+                app:wlv_waveAmplitude="20"
+                app:wlv_waveColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="11dp"
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txtTotal2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:textColor="@color/colorPrimaryLight"
+                            android:text="@string/total_ac"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:id="@+id/txtTotalExternalMemory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:textColor="@color/colorPrimaryLight"
+                            android:textStyle="bold"
+                            android:text="@string/zero_gb"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txtAvail2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:textColor="@color/colorPrimaryLight"
+                            android:text="@string/available_ac"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:id="@+id/txtAvailExternalMemory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/zero_with_dot_mb"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryLight"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txtFree2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:textColor="@color/colorPrimaryLight"
+                            android:text="@string/used_ac"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:id="@+id/txtFreeExternalMemory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/zero_gb"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryLight"
+                            android:singleLine="true"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

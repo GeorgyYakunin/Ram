@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Battery saver &amp; Ram booster</string>
+    <string name="action_settings">Настройки</string>
+    <string name="used_mem">И С П О Л Ь З У Е Т С Я</string>
+    <string name="free_mem">Б Е С П Л А Т Н О </string>
+        <string name="total_mem">В С Е Г О </string>
+    <string name="boost_time">Время буста: </string>
+    <string name="dialog_title">Результаты</string>
+    <string name="btn_cleantask">Очистка</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_kill">Очистка</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="mem">Память: </string>
+    <string name="cache">Кеш: </string>
+    <string name="btn_boost">Буст</string>
+    <string name="task_msg">Вы хотите очистить это?</string>
+
+    <string name="charger">Информация о зарядном устройстве</string>
+    <string name="datails">Детали батареи</string>
+    <string name="graph">График батареи</string>
+    <string name="taskkiller">Задача отменена</string>
+    <string name="batteryactivity">Режим сохранения энергии</string>
+    <string name="copyright1"></string>
+    <string name="copyright2"></string>
+    <string name="charger_battery">ЗАРЯДКА АККУМУЛЯТОРА</string>
+    <string name="ac">AC</string>
+    <string name="unknown_all_caps">НЕИЗВЕСТКО</string>
+    <string name="health">СОСТОЯНИЕ</string>
+    <string name="technology">ТЕХНОЛОГИЯ</string>
+    <string name="temp">Температура...</string>
+    <string name="voltage">ВОЛЬТАЖ</string>
+    <string name="status">СТАТУС</string>
+    <string name="plugged">ПОДКЛЮЧЕН</string>
+    <string name="fast_chargind_mode">РЕЖИМ БЫСТРОЙ ЗАРЯДКИ</string>
+    <string name="zero_percent">00 %</string>
+    <string name="wifi">WIFI</string>
+    <string name="sound">ЗВУК</string>
+    <string name="gps">GPS</string>
+    <string name="bluetooth">BLUETOOTH</string>
+    <string name="mobile_data">ПЕРЕДАЧА ДАННЫХ</string>
+    <string name="mode_avion">MODE AVION</string>
+    <string name="brightnes">ЯРКОСТЬ</string>
+    <string name="saving_mode">ЭКОНОМНЫЙ РЕЖИМ</string>
+    <string name="level">Уровень</string>
+    <string name="voltage_2">Вольтаж</string>
+    <string name="temperature">Температура</string>
+    <string name="process_killed">Процесс завершен: 17</string>
+    <string name="memory_cleaned">Память очищена: 30MB</string>
+    <string name="cache_cleaned">Кеш очищен: 30MB</string>
+    <string name="mb_128">128 MB</string>
+    <string name="date_example">31/10/2016 15:58:93 PM</string>
+    <string name="memory_cleaned_empty">Память очищена</string>
+    <string name="zero_mb">00 MB</string>
+    <string name="cache_cleaned_empty">Кеш очищен</string>
+    <string name="process_killed_empty">Процесс завершен</string>
+    <string name="internal_memory_info">Информация о внутренней памяти</string>
+    <string name="external_memory_info">Информация о внешней памяти</string>
+    <string name="total_ac">ВСЕГО</string>
+    <string name="zero_gb">0.00 GB</string>
+    <string name="available_ac">ДОСТУПНО</string>
+    <string name="zero_with_dot_mb">0.00 MB</string>
+    <string name="used_ac">ИСПОЛЬЗУЕТСЯ</string>
+    <string name="clear_background_processes">Очистить фоновые процессы.</string>
+    <string name="select_the_apps_from_the_list">- Выберите приложения из списка.</string>
+    <string name="click_the_rocket_to_clean_the_cache">- Нажми на \'Рокету\' для очистки кеша.</string>
+
+</resources>
